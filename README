@@ -1,0 +1,5 @@
+handleSubmit:
+handleSubmit on Formik-kirjaston tarjoama funktio, joka suorittaa 
+annetun onSubmit-funktion, kun lomake lähetetään. 
+Se ottaa lomakkeen tiedot sisään parametrina ja käyttää niitä 
+onSubmit-funktion suorittamiseen. 

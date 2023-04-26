@@ -1,4 +1,4 @@
-import { View, StyleSheet, Pressable } from 'react-native';
+import { View, StyleSheet, Pressable, ScrollView } from 'react-native';
 import Constants from 'expo-constants';
 import Text from './Text';
 import theme from '../theme';
@@ -10,14 +10,15 @@ const styles = StyleSheet.create({
     backgroundColor: theme.colors.darkBackground,
     height: 80,
     padding: 10,
-
   },
-  // ...
+  tab: {
+    margin: 4,
+  },
 });
 
 const AppBarTab = ({text, path}) => {
     return (
-        <Pressable>
+        <Pressable style={styles.tab}>
             <Link to={path}>
                 <Text color="fullWhite" >{text}</Text>
             </Link>
@@ -28,8 +29,16 @@ const AppBarTab = ({text, path}) => {
 const AppBar = () => {
     return (
     <View style={styles.container}>
-        <AppBarTab text="Repositories" path="/"/>
-        <AppBarTab text="Sign In" path="/signIn"/>
+        <ScrollView horizontal>
+            <AppBarTab text="Repositories" path="/"/>
+            <AppBarTab text="Sign In" path="/signIn"/>
+            <AppBarTab text="Repositories" path="/"/>
+            <AppBarTab text="Sign In" path="/signIn"/>
+            <AppBarTab text="Repositories" path="/"/>
+            <AppBarTab text="Sign In" path="/signIn"/>
+            <AppBarTab text="Repositories" path="/"/>
+            <AppBarTab text="Sign In" path="/signIn"/>
+        </ScrollView>
     </View>
     )
 };
