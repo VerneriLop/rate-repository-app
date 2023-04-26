@@ -1,5 +1,12 @@
-handleSubmit:
+HANDLESUBMIT
 handleSubmit on Formik-kirjaston tarjoama funktio, joka suorittaa 
 annetun onSubmit-funktion, kun lomake lähetetään. 
 Se ottaa lomakkeen tiedot sisään parametrina ja käyttää niitä 
 onSubmit-funktion suorittamiseen. 
+
+SALASANA:
+riittää kun signIn komponentilla laittaa formiktextinputille propsina
+secureTextEntry, niin se menee lopulta NativeTextInputille ilmeisesti,
+koska formiktextinput vastaanottaa kaikki propsit ja laittaa ne 
+taas eteenpäin ja sitten textinput tekee myös saman 
+eli tämä {...props}
