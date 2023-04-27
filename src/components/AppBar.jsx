@@ -32,6 +32,7 @@ const AppBar = () => {
         <ScrollView horizontal>
             <AppBarTab text="Repositories" path="/"/>
             <AppBarTab text="Sign In" path="/signIn"/>
+            {/*Nämä alla olevat sen takia että näkee horisontaalisen scrollauksen toimivan */}
             <AppBarTab text="Repositories" path="/"/>
             <AppBarTab text="Sign In" path="/signIn"/>
             <AppBarTab text="Repositories" path="/"/>
