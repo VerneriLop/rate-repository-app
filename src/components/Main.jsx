@@ -5,6 +5,7 @@ import Text from './Text';
 import { Route, Routes, Navigate } from 'react-router-native';
 import RepositoryList from './RepositoryList';
 import SignIn from './SignIn';
+import { BodyMassIndexCalculator } from './Mass';
 
 const styles = StyleSheet.create({
   container: {
@@ -19,6 +20,7 @@ const Main = () => {
   return (
     <View style={styles.container}>
       <AppBar/>
+      {/*<BodyMassIndexCalculator/>*/}
       <Routes>
         <Route path="/" element={<RepositoryList />} exact />
         <Route path="/signIn" element={<SignIn />} exact />
