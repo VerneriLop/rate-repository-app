@@ -7,6 +7,12 @@ const TextInput = ({ style, error, ...props }) => {
         style,
         error && { borderColor: theme.colors.errorColor }
     ];
+    /*
+    console.log("moi");
+    console.log('style: ',style);
+    console.log('error: ',error);
+    console.log('props: ',props);
+    */
 
   return <NativeTextInput style={textInputStyle} {...props} />;
 };
